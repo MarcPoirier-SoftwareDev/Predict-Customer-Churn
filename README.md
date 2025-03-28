@@ -4,7 +4,7 @@
 - Project **Predict Customer Churn** of ML DevOps Engineer Nanodegree Udacity
 
 ## Project Description
-This project focuses on predicting customer churn for a bank using machine learning techniques. The objective is to identify customers likely to leave based on their demographic and transactional data, enabling proactive retention strategies. Initially developed as a Jupyter notebook (`churn_notebook.ipynb`), the project has been refactored into a modular Python library (churn_library.py) that implements a complete machine learning pipeline. This pipeline includes data ingestion, exploratory data analysis (EDA), feature engineering, model training (using Logistic Regression and Random Forest), and model evaluation. A separate testing script (churn_script_logging_and_tests.py) validates the library's functions and logs the results.
+This project focuses on predicting customer churn for a bank using machine learning techniques. The objective is to identify customers likely to leave based on their demographic and transactional data, enabling proactive retention strategies. Initially developed as a Jupyter notebook (`churn_notebook.ipynb`), the project has been refactored into a modular Python library (churn_library.py) that implements a complete machine learning pipeline. This pipeline includes data ingestion, exploratory data analysis (EDA), feature engineering, model training (using Logistic Regression and Random Forest), and model evaluation. A separate testing script (`churn_script_logging_and_tests.py`) validates the library's functions and logs the results.
 
 The refactored code adheres to software engineering best practices, such as modularity, unit testing, logging, and PEP 8 compliance. By reading this README, users can set up the environment, run the pipeline, test the functions, and interpret the results.
 
@@ -12,8 +12,8 @@ The refactored code adheres to software engineering best practices, such as modu
 
 The root directory contains the following files and folders:
 
-- churn_library.py: The core Python library containing functions for the churn prediction pipeline:
-    - import_data: Loads the dataset from a CSV file.
+- `churn_library.py`: The core Python library containing functions for the churn prediction pipeline:
+    - `import_data`: Loads the dataset from a CSV file.
 
     - perform_eda: Conducts exploratory data analysis and saves plots (e.g., histograms, correlation heatmaps) to the images/ directory.
 
@@ -55,8 +55,8 @@ python churn_library.py
 ### Running the Testing Script
 To test the functions in churn_library.py and log the results, run:
 
-~~~bash~~~
-    python churn_script_logging_and_tests.py
+```bash
+python churn_script_logging_and_tests.py```
 
 #### What happens when you run this file?
 1. The script executes unit tests for each function in churn_library.py.
@@ -91,6 +91,7 @@ To test the functions in churn_library.py and log the results, run:
     - Regularly check the log file after running tests to ensure the library functions as expected.
 
 By following these steps, users can run the churn prediction pipeline, validate the code through testing, and use the logs to confirm the results.
+
 
 
 
