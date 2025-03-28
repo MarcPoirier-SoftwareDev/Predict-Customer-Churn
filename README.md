@@ -40,8 +40,9 @@ The root directory contains the following files and folders:
 ### Running the Churn Prediction Pipeline
 To execute the full churn prediction pipeline, run the following command in your terminal:
 
-bash
+```bash
 python churn_library.py
+```
 
 #### What happens when you run this file?
 1. The script loads data/bank_data.csv.
@@ -55,8 +56,9 @@ python churn_library.py
 ### Running the Testing Script
 To test the functions in churn_library.py and log the results, run:
 
-
-```python churn_script_logging_and_tests.py```
+```bash
+python churn_script_logging_and_tests.py
+```
 
 #### What happens when you run this file?
 1. The script executes unit tests for each function in churn_library.py.
@@ -91,7 +93,4 @@ To test the functions in churn_library.py and log the results, run:
     - Regularly check the log file after running tests to ensure the library functions as expected.
 
 By following these steps, users can run the churn prediction pipeline, validate the code through testing, and use the logs to confirm the results.
-
-
-
 
