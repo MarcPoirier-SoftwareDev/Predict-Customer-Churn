@@ -56,39 +56,41 @@ python churn_library.py
 To test the functions in churn_library.py and log the results, run:
 
 bash
-python churn_script_logging_and_tests.py
+```python churn_script_logging_and_tests.py```
 
 #### What happens when you run this file?
-The script executes unit tests for each function in churn_library.py.
+1. The script executes unit tests for each function in churn_library.py.
 
-It logs the outcome of each test (success or failure) to logs/churn_library.log.
+2. It logs the outcome of each test (success or failure) to logs/churn_library.log.
 
-If all tests pass, the functions are verified to work correctly; otherwise, error details are logged for debugging.
+3. If all tests pass, the functions are verified to work correctly; otherwise, error details are logged for debugging.
 
-Testing and Logging Instructions
-How to Test Functions:
-The churn_script_logging_and_tests.py script includes unit tests for each function in churn_library.py. These tests check:
-import_data: Ensures the dataset is loaded as a DataFrame with the expected shape.
+### Testing and Logging Instructions
+- How to Test Functions:
+    - The churn_script_logging_and_tests.py script includes unit tests for each function in churn_library.py. These tests check:
+        - import_data: Ensures the dataset is loaded as a DataFrame with the expected shape.
 
-perform_eda: Verifies that EDA plots are created and saved to images/.
+        - perform_eda: Verifies that EDA plots are created and saved to images/.
 
-encoder_helper: Confirms categorical variables are encoded correctly.
+        - encoder_helper: Confirms categorical variables are encoded correctly.
 
-perform_feature_engineering: Validates that features and train/test splits are generated properly.
+        - perform_feature_engineering: Validates that features and train/test splits are generated properly.
 
-train_models: Checks that models are trained, evaluated, and saved to models/ and images/.
+        - train_models: Checks that models are trained, evaluated, and saved to models/ and images/.
 
-Run the testing script as shown above to execute these tests.
+    - Run the testing script as shown above to execute these tests.
 
-How to Log and Review Results:
-The testing script logs results to logs/churn_library.log.
+- How to Log and Review Results:
+    - The testing script logs results to logs/churn_library.log.
 
-Open this file to review the outcomes:
-Success Messages: Indicate a function passed its test (e.g., "Data imported successfully").
+    - Open this file to review the outcomes:
+        - Success Messages: Indicate a function passed its test (e.g., "Data imported successfully").
 
-Error Messages: Provide details if a test fails (e.g., "EDA plot not found in images/"), aiding in troubleshooting.
+        - Error Messages: Provide details if a test fails (e.g., "EDA plot not found in images/"), aiding in troubleshooting.
 
-Regularly check the log file after running tests to ensure the library functions as expected.
+    - Regularly check the log file after running tests to ensure the library functions as expected.
 
 By following these steps, users can run the churn prediction pipeline, validate the code through testing, and use the logs to confirm the results.
+
+
 
