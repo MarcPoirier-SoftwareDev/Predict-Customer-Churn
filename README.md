@@ -56,7 +56,7 @@ python churn_library.py
 To test the functions in churn_library.py and log the results, run:
 
 bash
-```python churn_script_logging_and_tests.py```
+~python churn_script_logging_and_tests.py~
 
 #### What happens when you run this file?
 1. The script executes unit tests for each function in churn_library.py.
