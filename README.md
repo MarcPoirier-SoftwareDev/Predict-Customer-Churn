@@ -15,25 +15,25 @@ The root directory contains the following files and folders:
 - `churn_library.py`: The core Python library containing functions for the churn prediction pipeline:
     - `import_data`: Loads the dataset from a CSV file.
 
-    - perform_eda: Conducts exploratory data analysis and saves plots (e.g., histograms, correlation heatmaps) to the images/ directory.
+    - `perform_eda`: Conducts exploratory data analysis and saves plots (e.g., histograms, correlation heatmaps) to the `images/` directory.
 
-    - encoder_helper: Encodes categorical variables using target encoding.
+    - `encoder_helper`: Encodes categorical variables using target encoding.
 
-    - perform_feature_engineering: Prepares features and splits data into training and testing sets.
+    - `perform_feature_engineering`: Prepares features and splits data into training and testing sets.
 
-    - train_models: Trains Logistic Regression and Random Forest models, evaluates them, and saves results (e.g., ROC curves, feature importances) to images/ and models to models/.
+    - `train_models`: Trains Logistic Regression and Random Forest models, evaluates them, and saves results (e.g., ROC curves, feature importances) to `images/` and models to `models/`.
 
-- churn_script_logging_and_tests.py: A script with unit tests for the functions in churn_library.py, logging results to logs/churn_library.log.
+- `churn_script_logging_and_tests.py`: A script with unit tests for the functions in `churn_library.py`, logging results to `logs/churn_library.log`.
 
-- README.md: This documentation file.
+- `README.md`: This documentation file.
 
-- data/bank_data.csv: The dataset containing customer details (e.g., age, gender, income, transaction history) and the churn indicator (Attrition_Flag).
+- `data/bank_data.csv`: The dataset containing customer details (e.g., age, gender, income, transaction history) and the churn indicator (`Attrition_Flag`).
 
-- images/: Directory storing EDA plots and model evaluation visuals.
+- `images/`: Directory storing EDA plots and model evaluation visuals.
 
-- models/: Directory storing trained models (e.g., rfc_model.pkl for Random Forest, logistic_model.pkl for Logistic Regression).
+- `models/`: Directory storing trained models (e.g., `rfc_model.pkl` for Random Forest, `logistic_model.pkl` for Logistic Regression).
 
-- logs/churn_library.log: Log file capturing the outcomes of the unit tests.
+- `logs/churn_library.log`: Log file capturing the outcomes of the unit tests.
 
 ## Running Files
 
@@ -45,45 +45,45 @@ python churn_library.py
 ```
 
 #### What happens when you run this file?
-1. The script loads data/bank_data.csv.
+1. The script loads `data/bank_data.csv`.
 
-2. It performs EDA, generating and saving plots (e.g., histograms, bar plots, heatmaps) to images/.
+2. It performs EDA, generating and saving plots (e.g., histograms, bar plots, heatmaps) to `images/`.
 
 3. It engineers features by encoding categorical variables and splitting the data into training and testing sets.
 
-4. It trains Logistic Regression and Random Forest models, evaluates their performance (e.g., classification reports, ROC curves), and saves the results to images/ and the trained models to models/.
+4. It trains Logistic Regression and Random Forest models, evaluates their performance (e.g., classification reports, ROC curves), and saves the results to `images/` and the trained models to `models/`.
 
 ### Running the Testing Script
-To test the functions in churn_library.py and log the results, run:
+To test the functions in `churn_library.py` and log the results, run:
 
 ```bash
 python churn_script_logging_and_tests.py
 ```
 
 #### What happens when you run this file?
-1. The script executes unit tests for each function in churn_library.py.
+1. The script executes unit tests for each function in `churn_library.py`.
 
-2. It logs the outcome of each test (success or failure) to logs/churn_library.log.
+2. It logs the outcome of each test (success or failure) to `logs/churn_library.log`.
 
 3. If all tests pass, the functions are verified to work correctly; otherwise, error details are logged for debugging.
 
 ### Testing and Logging Instructions
 - How to Test Functions:
-    - The churn_script_logging_and_tests.py script includes unit tests for each function in churn_library.py. These tests check:
-        - import_data: Ensures the dataset is loaded as a DataFrame with the expected shape.
+    - The `churn_script_logging_and_tests.py` script includes unit tests for each function in `churn_library.py`. These tests check:
+        - `import_data`: Ensures the dataset is loaded as a DataFrame with the expected shape.
 
-        - perform_eda: Verifies that EDA plots are created and saved to images/.
+        - `perform_eda`: Verifies that EDA plots are created and saved to `images/`.
 
-        - encoder_helper: Confirms categorical variables are encoded correctly.
+        - `encoder_helper`: Confirms categorical variables are encoded correctly.
 
-        - perform_feature_engineering: Validates that features and train/test splits are generated properly.
+        - `perform_feature_engineering`: Validates that features and train/test splits are generated properly.
 
-        - train_models: Checks that models are trained, evaluated, and saved to models/ and images/.
+        - `train_models`: Checks that models are trained, evaluated, and saved to `models/` and `images/`.
 
     - Run the testing script as shown above to execute these tests.
 
 - How to Log and Review Results:
-    - The testing script logs results to logs/churn_library.log.
+    - The testing script logs results to `logs/churn_library.log`.
 
     - Open this file to review the outcomes:
         - Success Messages: Indicate a function passed its test (e.g., "Data imported successfully").
